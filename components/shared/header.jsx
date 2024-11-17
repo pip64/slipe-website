@@ -34,7 +34,7 @@ export default function Header() {
 											>
 												<div className='mb-2 mt-4 text-lg font-medium'>shadcn/ui</div>
 												<p className='text-sm leading-tight text-muted-foreground'>
-													Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+													Slipe omg best app forever cuz rizz
 												</p>
 											</a>
 										</NavigationMenuLink>
