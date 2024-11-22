@@ -43,6 +43,10 @@
   opacity: 1 !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 @layer base {
   * {

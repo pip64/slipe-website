@@ -50,7 +50,13 @@ module.exports = {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
-    		}
+    		},
+			keyframes: {
+				fadeUp: {
+				  '0%': { filter: 'blur(4px)', opacity: "0"},
+				  '100%': { filter: 'blur(0px)', opacity: "1"},
+				},
+			  },
     	}
     },
     plugins: [require("tailwindcss-animate")]
