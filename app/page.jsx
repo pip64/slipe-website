@@ -2,6 +2,7 @@
 
 import Hero from "@/components/shared/home/hero";
 import Reactions from "@/components/shared/home/reactions";
+import Statistics from "@/components/shared/home/statistics";
 import Swipes from "@/components/shared/home/swipes";
 
 
@@ -11,6 +12,7 @@ export default function Home() {
 			<Hero/>
 			<Reactions/>
 			<Swipes/>
+			<Statistics/>
 		</main>
 	);
 }

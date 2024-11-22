@@ -32,7 +32,6 @@ export default function Header() {
 			});
 			setIsBlack(scrolled);
 		};
-
 		document.addEventListener("scroll", handleScroll);
 		return () => document.removeEventListener("scroll", handleScroll);
 	}, []);

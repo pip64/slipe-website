@@ -12,7 +12,7 @@ export default function HeaderTabs({ pages, isBlack, url }) {
 
 	const handleLinkClick = event => {
 		const element = event.currentTarget;
-		
+
 		setIndicatorWidth(element.offsetWidth);
 		setIndicatorPosition(element.offsetLeft);
 	};

@@ -13,6 +13,7 @@
     --popover-foreground: 222.2 84% 4.9%;
     --primary: 210 100% 52%;
     --primary-foreground: 210 40% 98%;
+    --swiper-shadow: #ffffff4d;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
@@ -41,6 +42,10 @@
 
 .default-swiper .swiper-scrollbar {
   opacity: 1 !important;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: var(--swiper-shadow) !important;
 }
 
 body {
