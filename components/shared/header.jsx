@@ -12,12 +12,12 @@ const pages = [
 
 export default function Header() {
 	return (
-		<header className='w-screen p-3 fixed px-64'>
+		<header className='w-screen p-3 z-10 bg-white/90 backdrop-blur-2xl fixed px-64'>
 			<nav className='w-full flex items-center gap-7'>
 				<HeaderLogo />
 				<HeaderTabs pages={pages} />
 				<DownloadDialog>
-					<Button className='rounded-full' size='lg'>
+					<Button size='lg'>
 						Try app
 					</Button>
 				</DownloadDialog>

@@ -1,21 +1,21 @@
 import Link from "next/link";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger, DialogDescription, DialogHeader, DialogFooter } from "../ui/dialog";
+import Image from "next/image";
 
 export default function DownloadDialog({ children }) {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>{children}</DialogTrigger>
-			<DialogContent className='w-fit rounded-[1.25rem]'>
+			<DialogContent className='w-fit rounded-[1.5rem]'>
 				<DialogHeader>
-					<DialogTitle className='text-center text-2xl'>Scan QR-code to download</DialogTitle>
-					<DialogDescription className='text-md font-medium mt-1 text-center text-black/50'>
+					<DialogTitle className='text-center font-semibold text-2xl'>Scan QR-code to download</DialogTitle>
+					<DialogDescription className='text-md w-[21rem] font-medium mt-1 text-center text-black/50'>
 						Currently we support only phones based on Android
 					</DialogDescription>
 				</DialogHeader>
 				<div className='w-full flex justify-center'>
 					<div className='bg-black/[0.08] p-3 rounded-3xl'>
-						{/*Piece of shit instead QR-code*/}
-						<div className='w-48 aspect-square' />
+						<Image alt="QR-download" src="android-qr.svg" width={208} height={208}/>
 					</div>
 				</div>
 				<DialogFooter>
