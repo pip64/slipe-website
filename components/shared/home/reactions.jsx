@@ -15,7 +15,7 @@ export default function Reactions() {
 
 	return (
 		<section id="reactions-block" className='w-full pt-[8.25rem] overflow-hidden bg-black flex flex-col gap-9 py-32'>
-			<p className='text-[5rem] leading-[6.5rem] animate-[fadeUp_0.7s_ease-out] font-bold text-white text-center'>
+			<p className='text-[5rem] leading-[6.5rem] max-md:px-8 max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.7s_ease-out] font-bold text-white text-center'>
 				React it. Emoji it.
 				<br />
 				<span className='opacity-50'>Instead boring likes.</span>
@@ -47,7 +47,7 @@ export default function Reactions() {
 					modules={[Autoplay, EffectCreative]}
 				>
 					{emojiArray.map((img, index) => (
-						<SwiperSlide key={index} className='!w-64'>
+						<SwiperSlide key={index} className=' max-lg:!w-52 max-md:!w-40 !w-64'>
 							<Reaction img={img} />
 						</SwiperSlide>
 					))}

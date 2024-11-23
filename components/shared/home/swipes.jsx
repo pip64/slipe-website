@@ -18,7 +18,7 @@ export default function Swipes() {
 
 	return (
 		<section className='w-full pb-0 overflow-hidden bg-white flex flex-col gap-9 py-32'>
-			<p className='text-[5rem] leading-[6.5rem] animate-[fadeUp_0.9s_ease-out] font-bold text-black text-center'>
+			<p className='text-[5rem] leading-[6.5rem] max-md:px-8 max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.9s_ease-out] font-bold text-black text-center'>
 				Leave boring swipe.
 				<br />
 				<span className='opacity-50'>Time for Slipe’s swipe</span>

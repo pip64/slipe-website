@@ -14,13 +14,13 @@ export default function Statistics() {
 		getStatistics();
 	}, []);
 	return (
-		<section id='statistics-block' className='w-full pt-[8.25rem] overflow-hidden bg-[#1F1F1F] flex flex-col gap-9 py-32'>
-			<p className='text-[5rem] leading-[6.5rem] animate-[fadeUp_1.1s_ease-out] font-bold text-white text-center'>
+		<section id='statistics-block' className='w-full max-2xl:px-48 max-sm:px-8 max-xl:px-28 max-lg:px-16 pt-[8.25rem] px-80 overflow-hidden bg-[#1F1F1F] flex flex-col gap-9 py-32'>
+			<p className='text-[5rem] leading-[6.5rem] max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_1.1s_ease-out] font-bold text-white text-center'>
 				Are you ready?
 				<br />
 				<span className='opacity-50'>Join our community</span>
 			</p>
-			<div className='w-full animate-[fadeUp_1.2s_ease-out] px-80 flex justify-center gap-12'>
+			<div className='w-full animate-[fadeUp_1.2s_ease-out] max-lg:flex-col flex justify-center gap-12'>
 				<div className='w-full py-24 flex justify-center items-center flex-col gap-2 rounded-[2rem] bg-white'>
 					<span className='font-semibold text-6xl text-black'>{stats?.users.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
 					<span className='text-xl text-black/50'>Registered users</span>
@@ -30,7 +30,7 @@ export default function Statistics() {
 					<span className='text-xl text-white/50'>Published posts</span>
 				</div>
 			</div>
-			<div className='flex gap-5 animate-[fadeUp_0.6s_ease-out] justify-center'>
+			<div className='flex gap-5 flex-wrap animate-[fadeUp_0.6s_ease-out] justify-center'>
 				<DownloadDialog>
 					<Button size='xl'>Try app</Button>
 				</DownloadDialog>

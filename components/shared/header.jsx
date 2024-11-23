@@ -44,7 +44,7 @@ export default function Header() {
 		<header
 			ref={headerRef}
 			className={clsx(
-				"w-screen p-3 z-10 duration-200 ease-out backdrop-blur-2xl fixed px-64",
+				"w-screen p-3 z-10 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64",
 				isBlack ? "bg-black/85 text-white" : "bg-white/85 text-black"
 			)}
 		>
