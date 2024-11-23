@@ -18,39 +18,46 @@ const pages = [
 export default function Header() {
 	const url = usePathname();
 
-	const [isBlack, setIsBlack] = useState(false);
+	const [headerColor, setHeaderColor] = useState("white");
 	const headerRef = useRef(null);
-	const sections = ["reactions-block", "statistics-block"];
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrolled = sections.some(id => {
-				const header = headerRef.current.getBoundingClientRect();
-				const section = document.getElementById(id)?.getBoundingClientRect();
-				if (!section) return false;
-				return header.bottom > section?.top && header.top < section?.bottom;
-			});
-			setIsBlack(scrolled);
+			const header = headerRef.current.getBoundingClientRect();
+			const reactionsBlock = document.getElementById("reactions-block")?.getBoundingClientRect();
+			const statisticsBlock = document.getElementById("statistics-block")?.getBoundingClientRect();
+			setHeaderColor("white");
+
+			if (reactionsBlock && header.bottom > reactionsBlock.top && header.top < reactionsBlock.bottom) {
+				setHeaderColor("black");
+			}
+
+			if (statisticsBlock && header.bottom > statisticsBlock.top && header.top < statisticsBlock.bottom) {
+				setHeaderColor("gray");
+			}
 		};
+
 		document.addEventListener("scroll", handleScroll);
 		return () => document.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	useEffect(() => {
-		setIsBlack(false);
+		setHeaderColor("white");
 	}, [url]);
 
 	return (
 		<header
 			ref={headerRef}
-			className={clsx(
-				"w-screen p-3 z-10 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64",
-				isBlack ? "bg-black/85 text-white" : "bg-white/85 text-black"
-			)}
+			style={{
+				"--header-bg": headerColor === "black" ? "#000000D9" : headerColor === "gray" ? "#1F1F1FD9" : "#FFFFFFD9",
+				"--header-text": headerColor === "black" || headerColor === "gray" ? "#ffffff" : "#000000",
+				"--header-indicator": headerColor === "black" || headerColor === "gray" ? "#ffffff14" : "#00000014",
+			}}
+			className='w-screen bg-[--header-bg] text-[--header-text] p-3 z-10 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
 		>
 			<nav className='w-full flex items-center gap-7'>
 				<HeaderLogo />
-				<HeaderTabs isBlack={isBlack} pages={pages} url={url} />
+				<HeaderTabs pages={pages} url={url} />
 				<DownloadDialog>
 					<Button size='lg'>Try app</Button>
 				</DownloadDialog>
