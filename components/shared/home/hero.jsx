@@ -4,7 +4,6 @@ import { Button } from "../../ui/button";
 import DownloadDialog from "../download-dialog";
 import { ReactTyped } from "react-typed";
 import { useState } from "react";
-import { clsx } from "clsx";
 
 export default function Hero() {
 	const colors = ["#0A84FF", "#FFCA41", "#FF3F3F"];

@@ -20,7 +20,7 @@ export default function Header() {
 
 	const [isBlack, setIsBlack] = useState(false);
 	const headerRef = useRef(null);
-	const sections = ["reactions-block"];
+	const sections = ["reactions-block", "statistics-block"];
 
 	useEffect(() => {
 		const handleScroll = () => {
