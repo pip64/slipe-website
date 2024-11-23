@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import DownloadDialog from "../download-dialog";
+import Link from "next/link";
 
 export default function Statistics() {
 	const [stats, setStats] = useState({ users: 0, posts: 0 });
@@ -14,7 +15,10 @@ export default function Statistics() {
 		getStatistics();
 	}, []);
 	return (
-		<section id='statistics-block' className='w-full max-2xl:px-48 max-sm:px-8 max-xl:px-28 max-lg:px-16 pt-[8.25rem] px-80 overflow-hidden bg-[#1F1F1F] flex flex-col gap-9 py-32'>
+		<section
+			id='statistics-block'
+			className='w-full max-2xl:px-48 max-sm:px-8 max-xl:px-28 max-lg:px-16 pt-[8.25rem] px-80 overflow-hidden bg-[#1F1F1F] flex flex-col gap-9 py-32'
+		>
 			<p className='text-[5rem] leading-[6.5rem] max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_1.1s_ease-out] font-bold text-white text-center'>
 				Are you ready?
 				<br />
@@ -34,11 +38,15 @@ export default function Statistics() {
 				<DownloadDialog>
 					<Button size='xl'>Try app</Button>
 				</DownloadDialog>
-				<Button variant='secondaryBlack' size='xl'>
-					Discord
+				<Button asChild variant='secondaryBlack' size='xl'>
+					<Link target='_blank' href='https://discord.gg/H2phtsj9zJ'>
+						Discord
+					</Link>
 				</Button>
-				<Button variant='secondaryBlack' size='xl'>
-					Telegram
+				<Button asChild variant='secondaryBlack' size='xl'>
+					<Link target='_blank' href='https://t.me/slipe_space'>
+						Telegram
+					</Link>
 				</Button>
 			</div>
 		</section>
