@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function HeaderTabs({ pages, isBlack, url }) {
+export default function HeaderTabs({ pages, url }) {
 	const [indicatorWidth, setIndicatorWidth] = useState(0);
 	const [indicatorPosition, setIndicatorPosition] = useState(0);
 	const [isIndicator, setIsIndicator] = useState(false);
@@ -27,7 +27,7 @@ export default function HeaderTabs({ pages, isBlack, url }) {
 		setIndicatorPosition(element.offsetLeft);
 	}, []);
 	return (
-		<div className='flex pl-[3.3125rem] justify-center w-full'>
+		<div className='flex pl-[3.3125rem] max-md:hidden justify-center w-full'>
 			<ul className='relative items-center flex'>
 				{pages?.map(page => (
 					<li onClick={handleLinkClick} id={page.link} key={page.link}>

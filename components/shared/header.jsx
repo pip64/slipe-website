@@ -7,6 +7,7 @@ import HeaderTabs from "../ui/header/header-tabs";
 import { usePathname } from "next/navigation";
 import DownloadDialog from "./download-dialog";
 import { clsx } from "clsx";
+import HeaderTrigger from "../ui/header/header-trigger";
 
 const pages = [
 	{ link: "/", label: "About app" },
@@ -19,6 +20,7 @@ export default function Header() {
 	const url = usePathname();
 
 	const [headerColor, setHeaderColor] = useState("white");
+	const [isExpanded, setIsExpanded] = useState(false);
 	const headerRef = useRef(null);
 
 	const handleScroll = () => {
@@ -55,12 +57,13 @@ export default function Header() {
 			}}
 			className='w-screen bg-[--header-bg] text-[--header-text] p-3 z-10 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
 		>
-			<nav className='w-full flex items-center gap-7'>
+			<nav className='w-full flex max-md:justify-between items-center gap-7'>
 				<HeaderLogo />
 				<HeaderTabs pages={pages} url={url} />
 				<DownloadDialog>
-					<Button size='lg'>Try app</Button>
+					<Button className="max-md:hidden" size='lg'>Try app</Button>
 				</DownloadDialog>
+				<HeaderTrigger isExpanded={isExpanded} setIsExpanded={setIsExpanded}/>
 			</nav>
 		</header>
 	);
