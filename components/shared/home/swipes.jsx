@@ -19,9 +19,9 @@ export default function Swipes() {
 	return (
 		<section className='w-full pb-0 overflow-hidden bg-white flex flex-col gap-9 py-32'>
 			<p className='text-[5rem] leading-[6.5rem] max-md:px-8 max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.9s_ease-out] font-bold text-black text-center'>
-				Leave boring swipe.
+				No more boring swipes.
 				<br />
-				<span className='opacity-50'>Time for Slipe’s swipe</span>
+				<span className='opacity-50'>Time for Slipe’s swipes</span>
 			</p>
 			<Swiper
 				slidesPerView='auto'
@@ -50,7 +50,7 @@ export default function Swipes() {
 			>
 				{posts.map(img => (
 					<SwiperSlide key={img} className='!w-[19.75rem] !h-[28rem] rounded-[1.75rem]'>
-						<Image alt="post" width={1000} height={1000} src={`https://cdn.slipe.fun/posts/${img}.png`} className='w-full object-cover h-full' />
+						<Image alt='post' width={1000} height={1000} src={`https://cdn.slipe.fun/posts/${img}.png`} className='w-full object-cover h-full' />
 					</SwiperSlide>
 				))}
 			</Swiper>

@@ -16,8 +16,11 @@ export default function Hero() {
 				<div className='text-[5rem] leading-[6.5rem] max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] font-bold text-black text-center'>
 					<p className='animate-[fadeUp_0.3s_ease-out]'>Place where your blog</p>
 					<p className='animate-[fadeUp_0.4s_ease-out] max-md:flex max-md:flex-col max-md:items-center'>
-						gonna{" "}
-						<span style={{ "--color": colors[currentTyped], "--bg-color": colors[currentTyped] + '40'  }} className='bg-[--bg-color] duration-200 w-fit ease-out text-[--color] px-6 py-2 rounded-3xl'>
+						is gonna{" "}
+						<span
+							style={{ "--color": colors[currentTyped], "--bg-color": colors[currentTyped] + "40" }}
+							className='bg-[--bg-color] duration-200 w-fit ease-out text-[--color] px-6 py-2 rounded-3xl'
+						>
 							<ReactTyped
 								preStringTyped={index => setCurrentType(index)}
 								strings={["happen", "unique", "beauty"]}
@@ -29,7 +32,7 @@ export default function Hero() {
 					</p>
 				</div>
 				<p className='text-black/50 max-lg:w-full animate-[fadeUp_0.5s_ease-out] text-xl text-center w-[44rem]'>
-					Share your blog, your vision to your auditory with ease and creativity with slipe blogging app
+					Share your blog and your visions to your audience with creativity and ease using the new blogging app, Slipe
 				</p>
 			</div>
 			<div className='flex gap-5 animate-[fadeUp_0.6s_ease-out] justify-center'>
