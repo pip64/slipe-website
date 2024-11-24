@@ -21,28 +21,28 @@ export default function Header() {
 	const [headerColor, setHeaderColor] = useState("white");
 	const headerRef = useRef(null);
 
+	const handleScroll = () => {
+		const header = headerRef.current.getBoundingClientRect();
+		const reactionsBlock = document.getElementById("reactions-block")?.getBoundingClientRect();
+		const statisticsBlock = document.getElementById("statistics-block")?.getBoundingClientRect();
+		setHeaderColor("white");
+
+		if (reactionsBlock && header.bottom > reactionsBlock.top && header.top < reactionsBlock.bottom) {
+			setHeaderColor("black");
+		}
+
+		if (statisticsBlock && header.bottom > statisticsBlock.top && header.top < statisticsBlock.bottom) {
+			setHeaderColor("gray");
+		}
+	};
+
 	useEffect(() => {
-		const handleScroll = () => {
-			const header = headerRef.current.getBoundingClientRect();
-			const reactionsBlock = document.getElementById("reactions-block")?.getBoundingClientRect();
-			const statisticsBlock = document.getElementById("statistics-block")?.getBoundingClientRect();
-			setHeaderColor("white");
-
-			if (reactionsBlock && header.bottom > reactionsBlock.top && header.top < reactionsBlock.bottom) {
-				setHeaderColor("black");
-			}
-
-			if (statisticsBlock && header.bottom > statisticsBlock.top && header.top < statisticsBlock.bottom) {
-				setHeaderColor("gray");
-			}
-		};
-
 		document.addEventListener("scroll", handleScroll);
 		return () => document.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	useEffect(() => {
-		setHeaderColor("white");
+		handleScroll();
 	}, [url]);
 
 	return (

@@ -14,7 +14,7 @@ export default function Reactions() {
 		.slice(0, 9);
 
 	return (
-		<section id="reactions-block" className='w-full pt-[8.25rem] overflow-hidden bg-black flex flex-col gap-9 py-32'>
+		<section id="reactions-block" className='w-full overflow-hidden max-md:py-24 bg-black flex flex-col gap-9 py-32'>
 			<p className='text-[5rem] leading-[6.5rem] max-md:px-8 max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.7s_ease-out] font-bold text-white text-center'>
 				React it. Emoji it.
 				<br />

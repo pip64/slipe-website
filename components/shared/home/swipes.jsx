@@ -17,7 +17,7 @@ export default function Swipes() {
 	];
 
 	return (
-		<section className='w-full pb-0 overflow-hidden bg-white flex flex-col gap-9 py-32'>
+		<section className='w-full pb-0 overflow-hidden max-md:py-24 bg-white flex flex-col gap-9 py-32'>
 			<p className='text-[5rem] leading-[6.5rem] max-md:px-8 max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.9s_ease-out] font-bold text-black text-center'>
 				No more boring swipes.
 				<br />
@@ -45,7 +45,7 @@ export default function Swipes() {
 						translate: ["30%", "15%", 0],
 					},
 				}}
-				className='w-full default-swiper -mb-24 animate-[fadeUp_1s_ease-out]'
+				className='w-full default-swiper -mb-24 max-md:-mb-40 animate-[fadeUp_1s_ease-out]'
 				modules={[Autoplay, EffectCreative]}
 			>
 				{posts.map(img => (
