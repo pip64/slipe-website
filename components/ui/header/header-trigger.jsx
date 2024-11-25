@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Button } from "../button";
 
-export default function HeaderTrigger({ isExpanded, setIsExpanded }) {
+export default function HeaderTrigger({ isExpanded = false, setIsExpanded }) {
 	return (
 		<Button onClick={() => setIsExpanded(!isExpanded)} className='hidden max-md:block' size='icon' variant='icon'>
 			<svg width='24' height='24' viewBox='0 0 24 24' className='!w-10 !h-10' fill='none' xmlns='http://www.w3.org/2000/svg'>
