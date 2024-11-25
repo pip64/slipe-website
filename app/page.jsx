@@ -1,3 +1,5 @@
+"use client"
+
 import Hero from "@/components/shared/home/hero";
 import Reactions from "@/components/shared/home/reactions";
 import Statistics from "@/components/shared/home/statistics";
