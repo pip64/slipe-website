@@ -1,7 +1,6 @@
+"use client"
+
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import DownloadDialog from "../download-dialog";
-import Link from "next/link";
 
 export default function Statistics() {
 	const [stats, setStats] = useState({ users: 0, posts: 0 });

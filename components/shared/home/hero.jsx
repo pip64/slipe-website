@@ -1,3 +1,5 @@
+"use client"
+
 import "swiper/css";
 import "swiper/css/effect-creative";
 import { Button } from "../../ui/button";
