@@ -5,7 +5,7 @@ The official source code for the Slipe app's landing page.
 ## Pages
 
 - About app
-- Support us (in development)
+- Support us
 - Contacts (in development)
 - Out team
 

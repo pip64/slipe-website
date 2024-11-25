@@ -50,12 +50,13 @@ export default function Header() {
 	return (
 		<header
 			ref={headerRef}
+			data-expanded={isExpanded}
 			style={{
 				"--header-bg": headerColor === "black" ? "#000000D9" : headerColor === "gray" ? "#1F1F1FD9" : "#FFFFFFD9",
 				"--header-text": headerColor === "black" || headerColor === "gray" ? "#ffffff" : "#000000",
 				"--header-indicator": headerColor === "black" || headerColor === "gray" ? "#ffffff14" : "#00000014",
 			}}
-			className='w-screen bg-[--header-bg] text-[--header-text] p-3 z-20 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
+			className='w-screen data-[expanded=true]:bg-black data-[expanded=false]:bg-[--header-bg] text-[--header-text] p-3 z-20 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
 		>
 			<nav className='w-full flex max-md:justify-between items-center gap-7'>
 				<HeaderLogo />
