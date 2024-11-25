@@ -2,6 +2,7 @@
 
 import { ReactTyped } from "react-typed";
 import { useState } from "react";
+import BrandCard from "./brand-card";
 
 export default function SupportDevs() {
 	const colors = ["#FFFFFF", "#41C4C3", "#F15F2C"];
@@ -11,7 +12,7 @@ export default function SupportDevs() {
 	return (
 		<section
 			id='reactions-block'
-			className='w-full min-h-screen justify-center max-2xl:px-48 max-sm:px-8 max-xl:px-28 max-md:py-24 max-lg:px-16 px-80 overflow-hidden bg-black flex flex-col gap-9 py-32'
+			className='w-full min-h-screen justify-center max-2xl:px-36 max-sm:px-8 max-xl:px-20 max-md:py-24 max-lg:px-16 px-64 overflow-hidden bg-black flex flex-col gap-9 py-32'
 		>
 			<div className='text-[5rem] leading-[6.5rem] max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] font-bold text-white text-center'>
 				<p className='animate-[fadeUp_0.3s_ease-out]'>Support app devs</p>
@@ -30,6 +31,27 @@ export default function SupportDevs() {
 						/>
 					</span>
 				</p>
+			</div>
+			<div className='w-full animate-[fadeUp_0.4s_ease-out] max-lg:flex-col flex items-center justify-center gap-8'>
+				<BrandCard
+					color='#FFFFFF'
+					textColor='#000000'
+					background='https://cdn.slipe.fun/site/static/brands/patreon.png'
+					name='Patreon'
+					link='https://www.patreon.com/c/slipe_official'
+				/>
+                <BrandCard
+					color='#41C4C3'
+					background='https://cdn.slipe.fun/site/static/brands/tebex.png'
+					name='Tebex'
+					link='https://www.patreon.com/c/slipe_official'
+				/>
+                <BrandCard
+					color='#F15F2C'
+					background='https://cdn.slipe.fun/site/static/brands/boosty.png'
+					name='Boosty'
+					link='https://www.patreon.com/c/slipe_official'
+				/>
 			</div>
 		</section>
 	);

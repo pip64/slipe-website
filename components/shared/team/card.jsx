@@ -7,6 +7,7 @@ export default function DeveloperCard({ name = "", role = "", contact = "", avat
 		<div className='w-full h-80 max-w-[38.75rem] relative overflow-hidden group rounded-[1.75rem]'>
 			<Link
 				href={contact}
+				type="_blank"
 				style={{ "--developer-color": color, "--developer-end-color": `${color}00` }}
 				className='w-full h-full justify-between duration-200 ease-out group-hover:bg-[--developer-color] bg-gradient-to-t from-[--developer-color] to-60% to-[--developer-end-color] relative z-10 flex items-end p-7'
 			>
