@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import DownloadDialog from "../download-dialog";
+import Link from "next/link";
+
 
 export default function Statistics() {
 	const [stats, setStats] = useState({ users: 0, posts: 0 });
@@ -30,6 +34,21 @@ export default function Statistics() {
 					<span className='font-semibold text-6xl text-white'>{stats?.posts.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
 					<span className='text-xl text-white/50'>Published posts</span>
 				</div>
+			</div>
+			<div className='flex gap-5 flex-wrap animate-[fadeUp_0.6s_ease-out] justify-center'>
+				<DownloadDialog>
+					<Button size='dxl'>Try app</Button>
+				</DownloadDialog>
+				<Button asChild variant='secondaryBlack' size='dxl'>
+					<Link target='_blank' href='https://discord.gg/H2phtsj9zJ'>
+						Discord
+					</Link>
+				</Button>
+				<Button asChild variant='secondaryBlack' size='dxl'>
+					<Link target='_blank' href='https://t.me/slipe_space'>
+						Telegram
+					</Link>
+				</Button>
 			</div>
 		</section>
 	);
