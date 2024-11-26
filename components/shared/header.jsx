@@ -50,7 +50,7 @@ export default function Header() {
 	}, []);
 
 	useEffect(() => {
-		document.getElementById("main-block").style.pointerEvents = isExpanded ? "none" : "";
+		document.getElementById("main-block").style.pointerEvents = isExpanded ? "none" : "auto";
 		document.body.style.overflow = isExpanded ? "hidden" : "";
 	}, [isExpanded]);
 

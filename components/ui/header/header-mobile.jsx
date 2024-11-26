@@ -32,7 +32,7 @@ export default function HeaderMobile({ pages, url, setIsExpanded, isExpanded, ap
 				{createPortal(
 					<div
 						data-expanded={isExpanded}
-						className='w-screen duration-200 ease-out h-screen top-0 left-0 z-20 data-[expanded=true]:opacity-100 data-[expanded=false]:opacity-0 fixed bg-black/20 backdrop-blur-2xl'
+						className='w-screen duration-200 ease-out h-screen top-0 left-0 z-20 data-[expanded=true]:opacity-100 data-[expanded=false]:opacity-0 data-[expanded=true]:pointer-events-auto data-[expanded=false]:pointer-events-none fixed bg-black/20 backdrop-blur-2xl'
 					/>,
 					document.body
 				)}
