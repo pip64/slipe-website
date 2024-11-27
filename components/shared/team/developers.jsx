@@ -15,14 +15,14 @@ export default function Developers() {
 				<DeveloperCard
 					avatar='https://cdn.slipe.fun/site/static/avatars/dikiy.png'
 					name='Dikiy'
-					contact='https://t.me/ochendikiy'
+					contact='https://discord.com/channels/@me/1055859935000416367'
 					role='UI/UX, Frontend'
                     color="#80715E"
 				/>
                 <DeveloperCard
 					avatar='https://cdn.slipe.fun/site/static/avatars/pip.png'
 					name='Pip64'
-					contact='https://t.me/pip64b'
+					contact='https://discord.com/channels/@me/1068089262559465482'
 					role='Backend developer'
                     color="#834437"
 				/>

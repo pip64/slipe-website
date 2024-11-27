@@ -14,14 +14,14 @@ export default function DownloadDialog({ children }) {
 					</DialogDescription>
 				</DialogHeader>
 				<div className='w-full flex justify-center'>
-					<div className='bg-black/[0.08] p-3 rounded-3xl'>
-						<Image alt="QR-download" src="android-qr.svg" width={208} height={208}/>
+					<div className='bg-black/[0.08] p-6 rounded-[1.75rem]'>
+						<Image alt="QR-download" src="android-qr.svg" width={224} height={224}/>
 					</div>
 				</div>
 				<DialogFooter>
 					<p className='text-black/50 text-md'>
 						You are on IOS?{" "}
-						<Link href='exampleOfGuideForIos' className='text-primary font-medium duration-200 ease-out hover:opacity-75'>
+						<Link href='/soon' className='text-primary font-medium duration-200 ease-out hover:opacity-75'>
 							Click here
 						</Link>
 					</p>

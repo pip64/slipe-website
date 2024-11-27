@@ -6,7 +6,6 @@ import HeaderLogo from "../ui/header/header-logo";
 import HeaderTabs from "../ui/header/header-tabs";
 import { usePathname } from "next/navigation";
 import DownloadDialog from "./download-dialog";
-import { clsx } from "clsx";
 import HeaderTrigger from "../ui/header/header-trigger";
 import HeaderMobile from "../ui/header/header-mobile";
 
@@ -18,8 +17,8 @@ const pages = [
 ];
 
 const appUrls = [
-	{ link: "/app/2.0.0", label: "Try for Android" },
-	{ link: "/app/ios", label: "Try for iOS" },
+	{ link: "https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk", label: "Try for Android" },
+	{ link: "/soon", label: "Try for iOS" },
 ];
 
 export default function Header() {
