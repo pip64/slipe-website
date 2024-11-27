@@ -72,7 +72,7 @@ export default function Header() {
 				"--header-text": headerColor === "black" || headerColor === "gray" ? "#ffffff" : "#000000",
 				"--header-indicator": headerColor === "black" || headerColor === "gray" ? "#ffffff14" : "#00000014",
 			}}
-			className='w-screen data-[expanded=true]:bg-[--header-bg] data-[expanded=false]:bg-[--header-bg-90] text-[--header-text] p-3 z-20 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
+			className='w-screen data-[expanded=true]:bg-[--header-bg] data-[expanded=false]:bg-[--header-bg-90] text-[--header-text] p-3 z-50 duration-200 max-xl:px-32 max-lg:px-8 ease-out backdrop-blur-2xl fixed px-64'
 		>
 			<nav className='w-full flex max-md:justify-between items-center gap-7'>
 				<HeaderLogo />

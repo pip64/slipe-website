@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import DownloadDialog from "../download-dialog";
 import Link from "next/link";
 
-
 export default function Statistics() {
 	const [stats, setStats] = useState({ users: 0, posts: 0 });
 
@@ -37,8 +36,13 @@ export default function Statistics() {
 			</div>
 			<div className='flex gap-5 flex-wrap animate-[fadeUp_0.6s_ease-out] justify-center'>
 				<DownloadDialog>
-					<Button size='dxl'>Try app</Button>
+					<Button className='max-md:hidden' size='dxl'>
+						Try app
+					</Button>
 				</DownloadDialog>
+				<Button className='hidden max-md:block' size='dxl'>
+					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk'>Try app</Link>
+				</Button>
 				<Button asChild variant='secondaryBlack' size='dxl'>
 					<Link target='_blank' href='https://discord.gg/H2phtsj9zJ'>
 						Discord

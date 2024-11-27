@@ -3,6 +3,7 @@ import "swiper/css/effect-creative";
 import { Button } from "../../ui/button";
 import DownloadDialog from "../download-dialog";
 import { ReactTyped } from "react-typed";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Hero() {
@@ -37,8 +38,13 @@ export default function Hero() {
 			</div>
 			<div className='flex gap-5 animate-[fadeUp_0.6s_ease-out] justify-center'>
 				<DownloadDialog>
-					<Button size='dxl'>Try app</Button>
+					<Button className='max-md:hidden' size='dxl'>
+						Try app
+					</Button>
 				</DownloadDialog>
+				<Button className='hidden max-md:block' size='dxl'>
+					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk'>Try app</Link>
+				</Button>
 				<Button variant='secondary' size='dxl'>
 					Discord
 				</Button>
