@@ -5,15 +5,19 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 import Image from "next/image";
 
+function shuffle(array) {
+	return array.sort(() => Math.random() - 0.5);
+}
+
 export default function Swipes() {
 	const posts = [
-		"702aeb03-256f-4074-a731-f0555a476454",
-		"53ea186a-3696-4aa4-945a-089eeeed527a",
-		"c3535d9c-b27d-4a71-9759-cca1c85d2c8e",
-		"4286a15d-f62c-425e-9287-80d7f5199642",
-		"d2568d0e-d29f-4f24-b955-055a633d0358",
-		"4be968e4-6be7-4ac9-ae52-dd0fadc28e7d",
-		"1ba5ceb8-cd9d-400f-a380-63fc95078928",
+		"b9b7e7a3-77b1-41d4-8191-7e2585ecaf83",
+		"8ea7315e-38b2-4bc7-a709-0ad7375a96bc",
+		"6174e8d9-ed9e-4da6-889a-7b0d14deac20",
+		"2d62a6d0-d5b5-4981-8cf4-e0146a0a1458",
+		"be87bd9f-6489-4cc9-853d-c011f0c80ebb",
+		"feb82b47-91f9-4095-8a92-925b75f352e1",
+		"a1a81514-95b2-40cf-93c7-73709018de11"
 	];
 
 	return (
@@ -48,7 +52,7 @@ export default function Swipes() {
 				className='w-full default-swiper -mb-24 max-md:-mb-40 animate-[fadeUp_1s_ease-out]'
 				modules={[Autoplay, EffectCreative]}
 			>
-				{posts.map(img => (
+				{shuffle(posts).map(img => (
 					<SwiperSlide key={img} className='!w-[19.75rem] !h-[28rem] rounded-[1.75rem]'>
 						<Image alt='post' width={1000} height={1000} src={`https://cdn.slipe.fun/posts/${img}.png`} className='w-full object-cover h-full' />
 					</SwiperSlide>
