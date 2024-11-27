@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 import Head from "next/head";
@@ -9,6 +9,8 @@ const geistSans = localFont({
 	variable: "--font-geist-sans",
 	weight: "100 900",
 });
+
+import "./globals.css";
 
 export const metadata = {
 	title: "Slipe — Blogging app",
@@ -53,6 +55,7 @@ export default function RootLayout({ children }) {
 				<Header />
 				{children}
 				<Footer />
+				<Analytics/>
 			</body>
 		</html>
 	);
