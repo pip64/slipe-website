@@ -5,7 +5,7 @@ import { useState } from "react";
 import BrandCard from "./brand-card";
 
 export default function SupportDevs() {
-	const colors = ["#FFFFFF", "#41C4C3", "#F15F2C"];
+	const colors = ["#FFFFFF", "#FFFFFF", "#F15F2C"];
 
 	const [currentTyped, setCurrentType] = useState(0);
 
@@ -41,16 +41,16 @@ export default function SupportDevs() {
 					link='https://www.patreon.com/c/slipe_official'
 				/>
                 <BrandCard
-					color='#41C4C3'
-					background='https://cdn.slipe.fun/site/static/brands/tebex.png'
-					name='Tebex'
-					link='https://www.patreon.com/c/slipe_official'
+					color='#161616'
+					background='https://cdn.slipe.fun/site/static/brands/cryptomus.png'
+					name='Cryptomus'
+					link='/soon'
 				/>
                 <BrandCard
 					color='#F15F2C'
 					background='https://cdn.slipe.fun/site/static/brands/boosty.png'
 					name='Boosty'
-					link='https://www.patreon.com/c/slipe_official'
+					link='boosty.to/slipe'
 				/>
 			</div>
 		</section>

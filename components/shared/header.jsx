@@ -12,8 +12,8 @@ import HeaderMobile from "../ui/header/header-mobile";
 const pages = [
 	{ link: "/", label: "About app" },
 	{ link: "/support", label: "Support us" },
-	{ link: "/contacts", label: "Contacts" },
 	{ link: "/team", label: "Our team" },
+	{ link: "/contacts", label: "Contacts" },
 ];
 
 const appUrls = [
