@@ -7,7 +7,7 @@ export default function Developers() {
 			className='w-full min-h-screen justify-center max-2xl:px-48 max-sm:px-8 max-xl:px-28 max-md:py-24 max-lg:px-16 px-80 overflow-hidden bg-black flex flex-col gap-9 py-32'
 		>
 			<p className='text-[5rem] leading-[6.5rem] max-lg:text-[4rem] max-md:text-[3rem] max-md:leading-[4.5rem] max-lg:leading-[5.5rem] animate-[fadeUp_0.3s_ease-out] font-bold text-white text-center'>
-				There's those
+				There&apos;s those
 				<br />
 				<span className='opacity-50'>who created the Slipe</span>
 			</p>

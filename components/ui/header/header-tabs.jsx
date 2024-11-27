@@ -12,8 +12,8 @@ export default function HeaderTabs({ pages, url }) {
 	const handleLinkClick = event => {
 		const element = event.currentTarget;
 
-		setIndicatorWidth(element.offsetWidth);
-		setIndicatorPosition(element.offsetLeft);
+		setIndicatorWidth(element?.offsetWidth);
+		setIndicatorPosition(element?.offsetLeft);
 	};
 
 	useEffect(() => {
@@ -23,9 +23,10 @@ export default function HeaderTabs({ pages, url }) {
 			setIsIndicator(true);
 		}, 200);
 
-		setIndicatorWidth(element.offsetWidth);
-		setIndicatorPosition(element.offsetLeft);
+		setIndicatorWidth(element?.offsetWidth);
+		setIndicatorPosition(element?.offsetLeft);
 	}, []);
+	
 	return (
 		<div className='flex pl-[3.3125rem] max-md:hidden justify-center w-full'>
 			<ul className='relative items-center flex'>

@@ -5,15 +5,20 @@ import { useState, useEffect, useRef } from "react";
 import HeaderLogo from "../ui/header/header-logo";
 import HeaderTabs from "../ui/header/header-tabs";
 import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
 import DownloadDialog from "./download-dialog";
 import HeaderTrigger from "../ui/header/header-trigger";
-import HeaderMobile from "../ui/header/header-mobile";
+
+const HeaderMobile = dynamic(() => import('../ui/header/header-mobile'), {
+	ssr: false
+})
 
 const pages = [
 	{ link: "/", label: "About app" },
 	{ link: "/support", label: "Support us" },
 	{ link: "/team", label: "Our team" },
 	{ link: "/contacts", label: "Contacts" },
+	
 ];
 
 const appUrls = [
