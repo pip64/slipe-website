@@ -24,7 +24,7 @@ export default function SupportDevs() {
 					>
 						<ReactTyped
 							preStringTyped={index => setCurrentType(index)}
-							strings={["Patreon", "Tebex", "Boosty"]}
+							strings={["Patreon", "Cryptomus", "Boosty"]}
 							typeSpeed={100}
 							backSpeed={60}
 							loop
