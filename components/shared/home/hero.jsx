@@ -46,7 +46,7 @@ export default function Hero() {
 					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk'>Try app</Link>
 				</Button>
 				<Button size='dxl'>
-					<Link href='https://cdn.slipe.fun/site/static/app/slipe-prototype.apk'>Try prototype</Link>
+					<Link href='https://cdn.slipe.fun/site/static/app/slipe-proto.apk'>Try prototype</Link>
 				</Button>
 				<Button variant='secondary' size='dxl'>
 					Discord
