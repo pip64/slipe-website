@@ -45,6 +45,9 @@ export default function Hero() {
 				<Button className='hidden max-md:block' size='dxl'>
 					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk'>Try app</Link>
 				</Button>
+				<Button size='dxl'>
+					<Link href='https://cdn.slipe.fun/site/static/app/slipe-prototype.apk'>Try prototype</Link>
+				</Button>
 				<Button variant='secondary' size='dxl'>
 					Discord
 				</Button>
