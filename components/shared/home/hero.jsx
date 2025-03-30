@@ -36,7 +36,7 @@ export default function Hero() {
 					Share your blog and your visions to your audience with creativity and ease using the new blogging app, Slipe
 				</p>
 			</div>
-			<div className='flex gap-5 animate-[fadeUp_0.6s_ease-out] justify-center'>
+			<div className='flex gap-5 animate-[fadeUp_0.6s_ease-out] flex-wrap justify-center'>
 				<DownloadDialog>
 					<Button className='max-md:hidden' size='dxl'>
 						Try app
