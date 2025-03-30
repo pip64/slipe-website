@@ -24,7 +24,7 @@ const pages = [
 const appUrls = [
 	{ link: "https://cdn.slipe.fun/site/static/app/slipe-1.3.2.apk", label: "Try for Android" },
 	{ link: "/soon", label: "Try for iOS" },
-	{ link: "https://cdn.slipe.fun/site/static/app/slipe-prototype.apk", label: "Try prototype" }
+	{ link: "https://cdn.slipe.fun/site/static/app/slipe-proto.apk", label: "Try prototype" }
 ];
 
 export default function Header() {
