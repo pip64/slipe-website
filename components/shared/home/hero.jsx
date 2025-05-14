@@ -43,7 +43,7 @@ export default function Hero() {
 					</Button>
 				</DownloadDialog>
 				<Button className='hidden max-md:block' size='dxl'>
-					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.1.apk'>Try app</Link>
+					<Link href='https://cdn.slipe.fun/site/static/app/slipe-1.3.2.apk'>Try app</Link>
 				</Button>
 				<Button size='dxl'>
 					<Link href='https://cdn.slipe.fun/site/static/app/slipe-proto.apk'>Try prototype</Link>
