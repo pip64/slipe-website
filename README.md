@@ -14,7 +14,7 @@ The official source code for the Slipe app's landing page.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/slipe-app/slipe-website.git
+   git clone https://github.com/slipe-fun/landing.git
    ```
 
 2. Navigate to the landing directory:
