@@ -42,8 +42,8 @@ export default function SupportDevs() {
 				/>
                 <BrandCard
 					color='#161616'
-					background='https://cdn.slipe.fun/site/static/brands/cryptomus.png'
-					name='Cryptomus'
+					background='https://cdn.slipe.fun/site/static/brands/mileston.png'
+					name='Mileston'
 					link='/soon'
 				/>
                 <BrandCard
